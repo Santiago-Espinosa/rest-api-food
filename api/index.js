@@ -19,6 +19,8 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn, Diet } = require('./src/db.js');
+require('dotenv').config();
+const { PORT } = process.env;
 
 const typesOfDiets = [
   "dairy free",
@@ -36,7 +38,7 @@ const typesOfDiets = [
 conn.sync({ force: false })
     .then(() => {
       server.listen(process.env.PORT, () => {
-          console.log('%s listening at 3001'); // eslint-disable-line no-console
+          console.log('%s listening at', PORT); // eslint-disable-line no-console
           typesOfDiets.map((type) => Diet.findOrCreate({where: {name: type}}))
         });
     });
