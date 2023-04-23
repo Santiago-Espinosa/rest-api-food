@@ -1,0 +1,11 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: rgb(167, 131, 71); */
+  background-image: url("../../images/verduras1.png");
+  background-size: auto;
+}

@@ -1,0 +1,48 @@
+.Info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.9rem;
+  width: 65rem;
+}
+
+.Info > label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.Info > label > textarea {
+  width: 20rem;
+  height: 7rem;
+  resize: none;
+}
+
+.Info > label > textarea,
+.Info > label > input {
+  outline: none;
+  padding: 0.2rem 0.1rem;
+  background-color: rgba(87, 87, 87, 0.9);
+}
+
+.Info > label:nth-child(4) > input {
+  width: 3rem;
+}
+
+.dato {
+  border: rgb(255, 255, 255) solid 0.01rem;
+  color: white;
+}
+
+.datoError {
+  border: red solid 0.01rem;
+  color: red;
+}
+
+.textError {
+  color: rgb(255, 59, 59);
+  font-size: 0.9rem;
+}

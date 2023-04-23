@@ -1,0 +1,60 @@
+.loading {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background-color: rgb(227, 255, 226);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.loading img {
+  width: 60rem;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.conteinerLoader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30rem;
+  width: 100%;
+}
+
+.conteinerLoader > div {
+  background-color: rgba(58, 58, 58, 0.99);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+}
+
+.loader {
+  font-size: 48px;
+  color: transparent;
+  overflow: hidden;
+  display: inline-block;
+  font-family: "Alegreya Sans", sans-serif;
+  text-shadow: 0 0 #fff, 5em 0 #fff;
+  animation: marquee 2s infinite ease;
+}
+
+.loader:before {
+  content: "Loading...";
+}
+
+@keyframes marquee {
+  to {
+    text-shadow: -5em 0 #fff, 0 0 #fff;
+  }
+}

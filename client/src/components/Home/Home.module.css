@@ -1,0 +1,78 @@
+.background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../images/fondo3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.rota-horizontal {
+  transform: scaleX(-1);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 25em;
+  height: 32em;
+  padding: 2em;
+  background-size: cover;
+  background-position: center;
+}
+
+.card > img {
+  width: 22.5em;
+}
+
+.text {
+  height: 100px;
+  width: 260px;
+  font-size: 0.9em;
+  color: #202b40;
+}
+
+.button {
+  align-self: center;
+  background-color: rgb(32, 43, 64);
+  border: #e2e2e2 solid 3px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 1.3em;
+  padding: 0.75rem;
+  border-radius: 2rem;
+}
+.button:hover {
+  scale: 1.1;
+}
+.socialDiv {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.socialDiv img {
+  width: 2.5em;
+}
+
+.socialDiv > a {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  color: rgb(32, 43, 64);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+}
+.socialDiv > a:hover {
+  scale: 1.1;
+}
+.socialDiv > a:active {
+  scale: 1;
+}

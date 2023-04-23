@@ -1,0 +1,121 @@
+.carddetails {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 2%;
+  width: 96%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: inherit;
+  background-color: rgba(0, 0, 0, 0.836);
+  border-radius: 2rem;
+  padding: 1rem;
+  border: rgba(49, 49, 49, 0.711) solid 0.4rem;
+}
+
+.mainInfo {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.mainInfo > div > h1 {
+  color: rgb(255, 255, 255);
+  background-color: rgba(148, 37, 37, 0.938);
+  border-radius: 3rem;
+  padding: 0.4rem 1rem;
+  border: rgba(44, 44, 44, 1) solid 0.2rem;
+}
+
+.mainInfo > div > h2 {
+  color: rgba(44, 44, 44, 1);
+  background-color: hsl(56, 79%, 54%);
+  border-radius: 3rem;
+  padding: 0.4rem 1rem;
+  border: rgba(44, 44, 44, 1) solid 0.2rem;
+}
+
+.mainInfo > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 96%;
+  padding: 2%;
+  border-radius: 2rem;
+  background-color: rgba(44, 44, 44, 0.97);
+  gap: 0.9rem;
+}
+.mainInfo > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 26rem;
+  border-radius: 2rem;
+}
+
+.dietsConteiner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.dietsConteiner > span {
+  color: white;
+  font-weight: bolder;
+  background-color: rgb(34, 34, 34);
+  border: rgba(122, 122, 122, 0.711) solid 0.01rem;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  color: white;
+  background-color: rgb(39, 39, 39);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: rgb(72, 72, 72) solid 0.1rem;
+}
+
+.summary > span a {
+  color: rgb(167, 154, 224);
+  text-decoration: none;
+}
+
+.steps {
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.7em;
+  padding: 2rem;
+  text-align: left;
+  background-color: rgb(39, 39, 39);
+  border-radius: 2rem;
+}
+
+.steps > h4 {
+  font-size: 2.5rem;
+}
